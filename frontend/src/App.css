@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover {
+  cursor: pointer;
+}
+
+.main {
+  background-image: url('../src/assets/wood.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: #dccec0;
+}
