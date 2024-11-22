@@ -8,8 +8,8 @@
 
 - Skapa en postgres-databas, tabeller och startdata finns i db.sql-filen i backend-mappen
 - Skapa en .env-fil i backend-mappen och lägg in:
-  PGURI=postgres://ANVÄNDARNAMN:LÖSENORD@localhost/DATABASNAMN
-  där du ersätter användarnamn, lösenord och databasnamn med det du använde när du skapade databasen.
+  PGURI=postgres://ANVÄNDARNAMN:LÖSENORD@localhost/minizoo
+  där du ersätter användarnamn, lösenord. minizoo är namnet du gav databasen när du skapa den med CREATE DATABASE minizoo;
 
 - Kör npm run dev i terminalen i backend-mappen
 - Kör npm run dev i terminalen i frontend-mappen
