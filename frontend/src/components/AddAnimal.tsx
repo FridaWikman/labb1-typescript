@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Type } from './Animals'
+import { Type } from '../../../shared/interfaces'
 
 interface AddAnimalProps {
   types: Array<Type>

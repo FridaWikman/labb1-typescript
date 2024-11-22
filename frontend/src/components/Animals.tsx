@@ -1,18 +1,7 @@
 import '../App.css'
 import { useEffect, useState } from 'react'
 import AddAnimal from './AddAnimal'
-
-interface Animal {
-  name: string
-  image: string
-  type_name: string
-  weight: string
-}
-
-export interface Type {
-  name: string
-  id: number
-}
+import { Animal, Type } from '../../../shared/interfaces'
 
 export default function Animals() {
   const [animals, setAnimals] = useState<Animal[]>([]),

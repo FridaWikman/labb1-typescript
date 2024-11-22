@@ -3,25 +3,7 @@ import * as dotenv from 'dotenv'
 import { Client } from 'pg'
 import express from 'express'
 import { Request, Response } from 'express'
-
-interface Animal {
-  name: string
-  image: string
-  type_name: string
-  weight: string
-}
-
-interface NewAnimal {
-  name: string
-  image: string
-  type: string
-  weight: string
-}
-
-export interface Type {
-  name: string
-  id: number
-}
+import { Animal, Type } from '../shared/interfaces'
 
 dotenv.config()
 
@@ -45,7 +27,7 @@ app.get('/api', async (_req: Request, res: Response) => {
 })
 
 app.post('/api/post', async (req: Request, res: Response) => {
-  const { name, image, weight, type } = req.body as NewAnimal
+  const { name, image, weight, type } = req.body as Animal
   try {
     const { rows } = await client.query<Animal>(
       'INSERT INTO animals (name, image, weight, type) VALUES ($1,$2,$3,$4) RETURNING *',

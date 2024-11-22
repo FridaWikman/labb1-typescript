@@ -1,5 +1,4 @@
 import Animals from './components/Animals'
-// import AddAnimal from './components/AddAnimal'
 import logo from './assets/minizoo.png'
 import './App.css'
 
