@@ -18,7 +18,7 @@
 
 GET/SELECT görs för att hämta alla djuren från databasen. I index.ts i backend-mappen och i komponenten Animals i mappen Components i frontend-mappen.
 
-Props används för att skicka types(djurtyper) från kompnenten Animals till componenten AddAnimals. Tillhörande interface importeras från shared-mappen som ligger i rot-mappen.
+Props används för att skicka types(djurtyper) från kompnenten Animals till komponenten AddAnimals. Tillhörande interface importeras från shared-mappen som ligger i rot-mappen.
 
 Min useState med tillhörande generics finns i komponenten Animals, rad 7, där useStaten animals har en generic som är typad till en array av Animal-object(som är ett interface importerat från shared-mappen).
 
